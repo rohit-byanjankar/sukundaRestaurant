@@ -13,7 +13,7 @@
                     neque. Aliquam suscipit nisi erat, non ultricies ex aliquet a.
                 </p>
                 <div class="find-about">
-                    <a href="http://www.elit.com.np/template/bhaktapur/#" data-toggle="modal" data-target="#myModal">Find out more</a>
+                    <a href="#" data-toggle="modal" data-target="#myModal">Find out more</a>
                 </div>
             </div>
             <div class="clearfix"></div>
@@ -45,7 +45,7 @@
 </div>
 <!-- //about -->
 
-@push('scripts')
+
     <!-- Tooltip -->
     <div class="tooltip-content">
         <div class="modal fade features-modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -68,7 +68,6 @@
         </div>
     </div>
     <!-- //Tooltip -->
-@endpush
 
 
 

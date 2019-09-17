@@ -13,7 +13,7 @@ use App\Http\Controllers\OrderController;
 */
 
 Route::get('/', function () {
-    return view('front.layouts.layout');
+    return view('front.index');
 });
 
 Route::group(['prefix' => 'admin'], function () {

@@ -11,25 +11,25 @@
                         <a href="testi" aria-controls="testi" role="tab" data-toggle="tab">Break fast</a>
                     </li>
                     <li role="presentation">
-                        <a href="http://www.elit.com.np/template/bhaktapur/#profile" aria-controls="profile" role="tab" data-toggle="tab">lunch</a>
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">lunch</a>
                     </li>
                     <li role="presentation">
-                        <a href="http://www.elit.com.np/template/bhaktapur/#testi" aria-controls="profile" role="tab" data-toggle="tab">starters</a>
+                        <a href="#testi" aria-controls="profile" role="tab" data-toggle="tab">starters</a>
                     </li>
                     <li role="presentation">
-                        <a href="http://www.elit.com.np/template/bhaktapur/#profile" aria-controls="profile" role="tab" data-toggle="tab">dinner</a>
+                        <a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">dinner</a>
                     </li>
                     <li role="presentation">
-                        <a href="http://www.elit.com.np/template/bhaktapur/#testi" aria-controls="profile" role="tab" data-toggle="tab">burger</a>
+                        <a href="#testi" aria-controls="profile" role="tab" data-toggle="tab">burger</a>
                     </li>
                     <li role="presentation">
-                        <a href="http://www.elit.com.np/template/bhaktapur/#profile" aria-controls="testi" role="tab" data-toggle="tab">pizza</a>
+                        <a href="#profile" aria-controls="testi" role="tab" data-toggle="tab">pizza</a>
                     </li>
                     <li role="presentation">
-                        <a href="http://www.elit.com.np/template/bhaktapur/#testi" aria-controls="profile" role="tab" data-toggle="tab">desserts</a>
+                        <a href="#testi" aria-controls="profile" role="tab" data-toggle="tab">desserts</a>
                     </li>
                     <li role="presentation">
-                        <a href="http://www.elit.com.np/template/bhaktapur/#profile" aria-controls="testi" role="tab" data-toggle="tab">beverages</a>
+                        <a href="#profile" aria-controls="testi" role="tab" data-toggle="tab">beverages</a>
                     </li>
 
 
@@ -313,7 +313,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m2.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m2.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -330,7 +330,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m3.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m3.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -347,7 +347,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m4.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m4.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -366,7 +366,7 @@
                             <div class="col-md-6 menu-grids">
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m5.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m5.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -383,7 +383,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m6.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m6.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -400,7 +400,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m7.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m7.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -417,7 +417,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m1.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m1.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -443,7 +443,7 @@
                             <div class="col-md-6 menu-grids">
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m2.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m2.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -460,7 +460,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m3.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m3.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -477,7 +477,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m4.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m4.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -494,7 +494,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m5.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m5.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -513,7 +513,7 @@
                             <div class="col-md-6 menu-grids">
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m6.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m6.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -530,7 +530,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m7.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m7.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -547,7 +547,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m1.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m1.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -564,7 +564,7 @@
                                 </div>
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m2.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m2.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">

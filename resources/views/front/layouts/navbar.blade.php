@@ -12,36 +12,18 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
+
                     <!-- navbar-header -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li class="scroll hvr-underline-from-center">
-                                <a href="http://www.elit.com.np/template/bhaktapur/index.html">Home</a>
-                            </li>
-                            <li>
-                                <a class="scroll hvr-underline-from-center" href="http://www.elit.com.np/template/bhaktapur/#about">About</a>
-                            </li>
-                            <li>
-                                <a class="scroll hvr-underline-from-center" href="http://www.elit.com.np/template/bhaktapur/#menu">Menu</a>
-                            </li>
-                            <li>
-                                <a class="scroll hvr-underline-from-center" href="http://www.elit.com.np/template/bhaktapur/#team">Team</a>
-                            </li>
-                            <li>
-                                <a class="scroll hvr-underline-from-center" href="http://www.elit.com.np/template/bhaktapur/#testimonials">Testimonials</a>
-                            </li>
-                            <li>
-                                <a class="scroll hvr-underline-from-center" href="http://www.elit.com.np/template/bhaktapur/#contact">Contact</a>
-                            </li>
-                        </ul>
+                        {{menu('Site Main Menu')}}
                         <ul class="list-right">
                             <li>
                                 <span class="fa fa-envelope-o list-icon" aria-hidden="true"></span>
-                                <a href="mailto:info@example.com">info@example.com</a>
+                                <a href="mailto:info@example.com">{{setting('site.email')}}</a>
                             </li>
                             <li>
                                 <span class="fa fa-phone list-icon" aria-hidden="true"></span>
-                                <p> 1234 423 23 </p>
+                                <p> {{setting('site.phone_number')}} </p>
                             </li>
                         </ul>
                     </div>
@@ -57,7 +39,7 @@
             <div class="banner-top">
                 <div class="banner-info">
                     <h1>
-                        <a href="http://www.elit.com.np/template/bhaktapur/index.html">
+                        <a href="/">
                             <img src="frontend/image-assets/logo.png" class="img-responsive" alt="">Bhaktapur</a>
                     </h1>
                     <h2>Tasty experience in every bite!</h2>
