@@ -1,0 +1,83 @@
+/* custom */
+.card-header{
+	padding:0.25rem;
+	height:40px;
+}
+.half-page-items{
+	height:100%;
+	max-height:100%;
+	min-height: 100%;
+}
+.menu-item{
+	border:1px solid #000;
+	box-shadow:0px 1px 1px;
+	margin:10px;
+	padding:10px;
+	width:30%;
+	color:white;
+	height:130px;
+}
+
+.menu-item:hover{
+	opacity:0.8;
+}
+
+.menu-items>p.details{
+	width:100%;
+	color:white;
+	background:#000;
+	opacity:0.8;
+	height:30px;
+	line-height:30px;
+	padding:0 5px;
+	position: absolute;
+	left:0;
+	bottom:0;
+	margin:0;
+}
+
+.menu-item.ready{
+	background:red;
+	color:white;
+}
+
+.menu-item.served{
+	background:green;
+	color:white;
+}
+.menu-item.pending{
+	background:orange;
+	color:white;
+}
+.menu-item.cooking{
+	background:blue;
+	color:white;
+}
+
+.order-statistics{
+	text-align: center;
+	float:left;
+	margin:5px;
+	border:1px solid #f1f1f1;
+	padding:2px;
+	width:27%;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+.card-body{
+	margin-top:5px;
+	padding:5px 20px;
+}
+
+
+.invoice{
+	padding:0 10px;
+}
+.logo-left{
+	width:15%;
+	position: absolute;
+	left:10px;
+	top:10px;
+}
