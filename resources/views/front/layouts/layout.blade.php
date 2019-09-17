@@ -124,7 +124,7 @@
             </div>
         </div>
 
-        @include('content.ourMenu')
+        @include('front.content.ourMenu')
 
         <div class="section">
             <div class="w3_agileits-subscribe timings text-center">
