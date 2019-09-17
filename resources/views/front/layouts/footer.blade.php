@@ -1,8 +1,7 @@
 <!-- contact -->
 <div class="contact-bottom" id="contact">
     <div class="col-md-6  map">
-        <iframe src="./bhaktapur_files/embed.html" style="border:0" allowfullscreen=""></iframe>
-
+        <iframe src="embed.html" alt="MAP" style="border:0" allowfullscreen=""></iframe>
     </div>
     <div class="col-md-6 contact-right">
         <h3 class="title-contact">get in touch</h3>

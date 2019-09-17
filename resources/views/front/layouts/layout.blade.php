@@ -4,23 +4,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- //for-mobile-apps -->
-    <link href="./bhaktapur_files/bootstrap.css" rel="stylesheet" type="text/css" media="all">
-    <link href="./bhaktapur_files/font-awesome.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
     <!--about-bottom -->
-    <link type="text/css" rel="stylesheet" href="./bhaktapur_files/cm-overlay.css">
+    <link type="text/css" rel="stylesheet" href="css/cm-overlay.css">
     <!--about-bottom -->
-    <link href="./bhaktapur_files/css(1)" rel="stylesheet">
-    <link href="./bhaktapur_files/css(2)" rel="stylesheet">
-    <link href="./bhaktapur_files/css(3)" rel="stylesheet">
-    <link href="./bhaktapur_files/style.css" rel="stylesheet" type="text/css" media="all">
+    <link href="css/font1.css" rel="stylesheet">
+    <link href="css/font2.css" rel="stylesheet">
+    <link href="css/font3.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
     @yield('stylesheet')
 </head>
 <body>
 <div class="wrapper">
         @include('front.layouts.navbar')
     <div class="main-panel">
-        @yield('content.aboutUs')
-
+        @include('front.content.aboutUs')
         <div class="section">
             <div class="container">
                 <h3 class="w3layouts-title">Taste the best !</h3>
@@ -38,49 +37,23 @@
                                     <div class="item active">
                                         <div class="row">
                                             <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g1.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g1.jpg" alt="Image" style="max-width:100%;">
+                                                <a href="g1.jpg" class="thumbnail cm-overlay">
+                                                    <img src="frontend/image-assets/g1.jpg" alt="Image" style="max-width:100%;">
                                                 </a>
                                             </div>
                                             <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g2.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g2.jpg" alt="Image" style="max-width:100%;">
+                                                <a href="g2.jpg" class="thumbnail cm-overlay">
+                                                    <img src="frontend/image-assets/g2.jpg" alt="Image" style="max-width:100%;">
                                                 </a>
                                             </div>
                                             <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g3.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g3.jpg" alt="Image" style="max-width:100%;">
+                                                <a href="g3.jpg" class="thumbnail cm-overlay">
+                                                    <img src="frontend/image-assets/g3.jpg" alt="Image" style="max-width:100%;">
                                                 </a>
                                             </div>
                                             <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g4.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g4.jpg" alt="Image" style="max-width:100%;">
-                                                </a>
-                                            </div>
-                                        </div>
-                                        <!--.row-->
-                                    </div>
-                                    <!--.item-->
-                                    <div class="item">
-                                        <div class="row">
-                                            <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g5.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g5.jpg" alt="Image" style="max-width:100%;">
-                                                </a>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g6.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g6.jpg" alt="Image" style="max-width:100%;">
-                                                </a>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g7.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g7.jpg" alt="Image" style="max-width:100%;">
-                                                </a>
-                                            </div>
-                                            <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g1.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g1.jpg" alt="Image" style="max-width:100%;">
+                                                <a href="g4.jpg" class="thumbnail cm-overlay">
+                                                    <img src="frontend/image-assets/g4.jpg" alt="Image" style="max-width:100%;">
                                                 </a>
                                             </div>
                                         </div>
@@ -90,23 +63,49 @@
                                     <div class="item">
                                         <div class="row">
                                             <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g2.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g2.jpg" alt="Image" style="max-width:100%;">
+                                                <a href="g5.jpg" class="thumbnail cm-overlay">
+                                                    <img src="frontend/image-assets/g5.jpg" alt="Image" style="max-width:100%;">
                                                 </a>
                                             </div>
                                             <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g3.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g3.jpg" alt="Image" style="max-width:100%;">
+                                                <a href="g6.jpg" class="thumbnail cm-overlay">
+                                                    <img src="frontend/image-assets/g6.jpg" alt="Image" style="max-width:100%;">
                                                 </a>
                                             </div>
                                             <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g4.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g4.jpg" alt="Image" style="max-width:100%;">
+                                                <a href="g7.jpg" class="thumbnail cm-overlay">
+                                                    <img src="frontend/image-assets/g7.jpg" alt="Image" style="max-width:100%;">
                                                 </a>
                                             </div>
                                             <div class="col-md-3">
-                                                <a href="./bhaktapur_files/g5.jpg" class="thumbnail cm-overlay">
-                                                    <img src="./bhaktapur_files/g5.jpg" alt="Image" style="max-width:100%;">
+                                                <a href="g1.jpg" class="thumbnail cm-overlay">
+                                                    <img src="frontend/image-assets/g1.jpg" alt="Image" style="max-width:100%;">
+                                                </a>
+                                            </div>
+                                        </div>
+                                        <!--.row-->
+                                    </div>
+                                    <!--.item-->
+                                    <div class="item">
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <a href="g2.jpg" class="thumbnail cm-overlay">
+                                                    <img src="g2.jpg" alt="Image" style="max-width:100%;">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="g3.jpg" class="thumbnail cm-overlay">
+                                                    <img src="g3.jpg" alt="Image" style="max-width:100%;">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="g4.jpg" class="thumbnail cm-overlay">
+                                                    <img src="g4.jpg" alt="Image" style="max-width:100%;">
+                                                </a>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <a href="g5.jpg" class="thumbnail cm-overlay">
+                                                    <img src="g5.jpg" alt="Image" style="max-width:100%;">
                                                 </a>
                                             </div>
                                         </div>
@@ -115,8 +114,8 @@
                                     <!--.item-->
                                 </div>
                                 <!--.carousel-inner-->
-                                <a data-slide="prev" href="http://www.elit.com.np/template/bhaktapur/#Carousel" class="left carousel-control">‹</a>
-                                <a data-slide="next" href="http://www.elit.com.np/template/bhaktapur/#Carousel" class="right carousel-control">›</a>
+                                <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                                <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
                             </div>
                             <!--.Carousel-->
                         </div>
@@ -125,7 +124,7 @@
             </div>
         </div>
 
-        @yield('content.ourMenu')
+        @include('content.ourMenu')
 
         <div class="section">
             <div class="w3_agileits-subscribe timings text-center">
@@ -145,7 +144,6 @@
             </div>
         </div>
 
-
         <!-- slid -->
         <div class="slid">
             <div class="slid-text">
@@ -158,19 +156,19 @@
         </div>
         <!-- //slid -->
 
-        @yield('content.testimonial')
+        @include('front.content.testimonial')
         @include('front.layouts.footer')
     </div>
 </div>
 <!-- js -->
-@yield('scripts')
 
-<script src="./bhaktapur_files/jquery-2.2.3.min.js.download"></script>
+<script src="js/jquery-2.2.3.min.js"></script>
 <!--/js-->
 <!-- //gallery -->
-<script src="./bhaktapur_files/jquery.tools.min.js.download"></script>
-<script src="./bhaktapur_files/jquery.mobile.custom.min.js.download"></script>
-<script src="./bhaktapur_files/jquery.cm-overlay.js.download"></script>
+<script src="js/jquery.tools.min.js"></script>
+<script src="js/jquery.mobile.custom.min.js"></script>
+<script src="js/jquery.cm-overlay.js"></script>
+<script src="js/bootstrap.js"></script>
 <script>
     $(document).ready(function () {
         $('.cm-overlay').cmOverlay();
@@ -178,17 +176,17 @@
 </script>
 <!-- //gallery -->
 <!--start-date-piker-->
-<link rel="stylesheet" href="./bhaktapur_files/jquery-ui.css">
-<script src="./bhaktapur_files/jquery-ui.js.download"></script>
+<link rel="stylesheet" href="css/jquery-ui.css">
+<script src="js/jquery-ui.js"></script>
 <script>
     $(function () {
         $("#datepicker,#datepicker1").datepicker();
     });
 </script>
 <!-- /End-date-piker -->
-<script src="./bhaktapur_files/SmoothScroll.min.js.download"></script>
-<script type="text/javascript" src="./bhaktapur_files/move-top.js.download"></script>
-<script type="text/javascript" src="./bhaktapur_files/easing.js.download"></script>
+<script src="js/SmoothScroll.min.js"></script>
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
     jQuery(document).ready(function ($) {
         $(".scroll").click(function (event) {
@@ -221,8 +219,8 @@
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<script src="./bhaktapur_files/bootstrap.js.download"></script>
-<a href="http://www.elit.com.np/template/bhaktapur/#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a>
+<a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a>
+@stack('scripts')
 </body>
 </html>
 

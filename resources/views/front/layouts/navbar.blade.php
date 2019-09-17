@@ -58,7 +58,7 @@
                 <div class="banner-info">
                     <h1>
                         <a href="http://www.elit.com.np/template/bhaktapur/index.html">
-                            <img src="./bhaktapur_files/logo.png" class="img-responsive" alt="">Bhaktapur</a>
+                            <img src="frontend/image-assets/logo.png" class="img-responsive" alt="">Bhaktapur</a>
                     </h1>
                     <h2>Tasty experience in every bite!</h2>
 

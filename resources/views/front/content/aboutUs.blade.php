@@ -1,11 +1,9 @@
-@extends('layouts.layout)
-@section('aboutUs')
 <!-- about -->
 <div class="section w3ls-banner-btm-main" id="about">
     <div class="container">
         <div class="banner-btm">
             <div class="col-md-6 banner-btm-g1">
-                <img src="./bhaktapur_files/about.jpg" class="img-responsive" alt="">
+                <img src="frontend/image-assets/about.jpg" class="img-responsive" alt="">
             </div>
             <div class="col-md-6 banner-btm-g2">
                 <h3 class="title-main">welcome to bhaktapur </h3>
@@ -46,9 +44,8 @@
     <div class="clearfix"></div>
 </div>
 <!-- //about -->
-@stop
 
-@section('scripts')
+@push('scripts')
     <!-- Tooltip -->
     <div class="tooltip-content">
         <div class="modal fade features-modal" id="myModal" tabindex="-1" role="dialog" aria-hidden="true">
@@ -57,10 +54,10 @@
                     <div class="modal-header">
                         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
                         <h3 class="modal-title">
-                            <img src="./bhaktapur_files/logo.png" class="img-responsive img1" alt="">Bhaktapur</h3>
+                            <img src="frontend/image-assets/logo.png" class="img-responsive img1" alt="">Bhaktapur</h3>
                     </div>
                     <div class="modal-body">
-                        <img src="./bhaktapur_files/modal.jpg" class="img-responsive" alt="image">
+                        <img src="frontend/image-assets/modal.jpg" class="img-responsive" alt="image">
                         <h4>Tasty experience in every bite!</h4>
                         <p>Fusce et congue nibh, ut ullamcorper magna. Donec ac massa tincidunt, fringilla sapien vel, tempus massa. Vestibulum
                             felis leo, tincidunt sit amet tristique accumsan. In vitae dapibus metus. Donec nec massa non nulla mattis aliquam
@@ -71,7 +68,7 @@
         </div>
     </div>
     <!-- //Tooltip -->
-@endsection
+@endpush
 
 
 
