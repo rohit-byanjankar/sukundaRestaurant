@@ -1,5 +1,4 @@
 
-@section('ourMenu'))
 <!--menu -->
 <div class="section main-menu" id="menu">
     <div class="container">
@@ -9,7 +8,7 @@
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs" role="tablist">
                     <li role="presentation" class="active">
-                        <a href="http://www.elit.com.np/template/bhaktapur/#testi" aria-controls="testi" role="tab" data-toggle="tab">Break fast</a>
+                        <a href="testi" aria-controls="testi" role="tab" data-toggle="tab">Break fast</a>
                     </li>
                     <li role="presentation">
                         <a href="http://www.elit.com.np/template/bhaktapur/#profile" aria-controls="profile" role="tab" data-toggle="tab">lunch</a>
@@ -289,7 +288,7 @@
 
         <div class="load_more">
             <h3 class="w3layouts-title">
-                <img src="./bhaktapur_files/menu1.png" class="img-responsive" alt="">special dishes</h3>
+                <img src="frontend/image-assets/menu1.png" class="img-responsive" alt="">special dishes</h3>
             <ul id="myList">
                 <li style="display: list-item;">
                     <div class="l_g">
@@ -297,7 +296,7 @@
                             <div class="col-md-6 menu-grids">
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="./bhaktapur_files/m1.jpg" alt="" class="img-responsive">
+                                        <img src="frontend/image-assets/m1.jpg" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
@@ -594,9 +593,8 @@
     </div>
 </div>
 <!--//menu-->
-@endsection
 
-@section('scripts')
+@push('scripts')
     <script>
         $(document).ready(function () {
             size_li = $("#myList li").size();
@@ -612,6 +610,6 @@
             });
         });
     </script>
-@endsection
+@endpush
 
 
