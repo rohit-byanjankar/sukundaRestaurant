@@ -282,7 +282,7 @@ font-size: 15px;
 /* .section:after { 
     content: '';
     position: absolute;
-    background: url(../images/r.png)repeat center 0px;
+    background: url(../frontend/image-assets/r.png)repeat center 0px;
     background-size: 3%;
     display: block;
     bottom: 0;
@@ -334,7 +334,7 @@ span.sub-title {
 /*-- //banner-text --*/
 /*-- banner-top --*/
 .agile-banner-main{
-    background: url(../images/b1.jpg) no-repeat 0px 0px;
+    background: url(../frontend/image-assets/b1.jpg) no-repeat 0px 0px;
 	 background-size: cover;	
 	-webkit-background-size: cover;	
 	-moz-background-size: cover;
@@ -434,7 +434,7 @@ h3.w3layouts-title{
 }
 /*--menu--*/
 .menu-agileits_w3layouts{
-    background: url(../images/menu-bg.jpg) no-repeat center fixed;
+    background: url(../frontend/image-assets/menu-bg.jpg) no-repeat center fixed;
     background-size: cover;
 }
 h3.w3layouts-title img {
@@ -515,7 +515,7 @@ ul#myList {
     display: inline-block;
     border: 1px solid #a51c21;
     font-size: 1.1em;
-    background: url(../images/icon2.png)no-repeat #a51c21 105px 16px;
+    background: url(../frontend/image-assets/icon2.png)no-repeat #a51c21 105px 16px;
     position: relative;
     transition: 0.5s all ease;
 	-webkit-transition: 0.5s all ease;
@@ -528,7 +528,7 @@ ul#myList {
 }
 #loadMore:hover {
     color:#a51c21;
-    background: url(../images/icon1.png)no-repeat #fff  105px 16px;
+    background: url(../frontend/image-assets/icon1.png)no-repeat #fff  105px 16px;
     font-weight: 600;
 }
 #showLess {
@@ -540,7 +540,7 @@ ul#myList {
 	display: inline-block;
 	border: 1px solid #a51c21;
 	font-size: 1.1em;
-	background:url(../images/icon4.png) #a51c21 no-repeat 105px 16px;
+	background:url(../frontend/image-assets/icon4.png) #a51c21 no-repeat 105px 16px;
 	position: relative;
 	transition: 0.5s all ease;
 	-webkit-transition: 0.5s all ease;
@@ -553,7 +553,7 @@ ul#myList {
 }
 #showLess:hover {
 	color:#a51c21;
-    background:url(../images/icon3.png) #fff no-repeat 105px 16px;
+    background:url(../frontend/image-assets/icon3.png) #fff no-repeat 105px 16px;
     font-weight: 600;
 }
 .l_g:after{
@@ -694,7 +694,7 @@ form.book-right2 {
     color: #fff;
 }
 .book-left1 {
-    background: url(../images/reserve.jpg)no-repeat;
+    background: url(../frontend/image-assets/reserve.jpg)no-repeat;
     background-size: cover;
     min-height: 300px;
     float: left;
@@ -710,10 +710,10 @@ form.book-right2 {
     padding: 0;
 }
 .about-img1{
-    background: url(../images/about2.jpg)no-repeat center;
+    background: url(../frontend/image-assets/about2.jpg)no-repeat center;
 }
 .about-img2 {
-    background: url(../images/g1.jpg)no-repeat center;
+    background: url(../frontend/image-assets/g1.jpg)no-repeat center;
 }
 .about-img2 ,.about-img1{
     -webkit-background-size: cover;
@@ -722,7 +722,7 @@ form.book-right2 {
     min-height: 291px;
 }
 .about-bg{
-    background: url(../images/modal.jpg)no-repeat center;
+    background: url(../frontend/image-assets/modal.jpg)no-repeat center;
     -webkit-background-size: cover;
     background-size: cover;
     -moz-background-size: cover;
@@ -928,7 +928,7 @@ background: #428bca;
 }
 .main-menu {
     padding: 5em 0;
-    background:url(../images/mbg.png) no-repeat center fixed;
+    background:url(../frontend/image-assets/mbg.png) no-repeat center fixed;
     background-size:cover;
 	min-height:564px;
 }
@@ -1119,7 +1119,7 @@ h3.title-contact {
 
 .w3_agileits-subscribe {
     width: 50%;
-    background: url(../images/sub.jpg) no-repeat center;
+    background: url(../frontend/image-assets/sub.jpg) no-repeat center;
     background-size: cover;
     margin: 0 auto;
     padding:3em 2em;
@@ -1361,7 +1361,7 @@ ul.w3_address li p {
 /*-- //welcome --*/ 
 /*-- slid --*/
 .slid {
-    background: url(../images/b1.jpg)no-repeat center fixed;
+    background: url(../frontend/image-assets/b1.jpg)no-repeat center fixed;
     background-size: cover;
     min-height: 458px;
 	position:relative;
@@ -1400,7 +1400,7 @@ ul.w3_address li p {
     height: 35px;
     border: none;
     text-indent: 100%;
-    background: url(../images/totop.png) no-repeat 0px 0px;
+    background: url(../frontend/image-assets/totop.png) no-repeat 0px 0px;
   }
   
   #toTopHover {
