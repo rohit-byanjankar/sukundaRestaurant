@@ -64,7 +64,7 @@
         </ul>
     </div>
     <div class="footer-copy">
-        <p>© 2017 Elit. All rights reserved | Design by Elit
+        <p>© 2019 Elit. All rights reserved | Design by Elit
         </p>
     </div>
 </div>

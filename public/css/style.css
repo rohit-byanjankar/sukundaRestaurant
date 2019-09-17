@@ -1376,8 +1376,7 @@ ul.w3_address li p {
     padding: 5em;
     width: 50%;
     margin: 6em 0 5em;
-    background: #FAA026;
-    opacity: 0.76;
+    background: rgba(250,160,38,0.76);
 }
 
 .slid h4 {
