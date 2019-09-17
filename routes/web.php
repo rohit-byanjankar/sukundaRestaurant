@@ -16,6 +16,10 @@ Route::get('/', function () {
     return view('front.index');
 });
 
+Route::get('/pos', function () {
+    return view('front.pos');
+});
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 
