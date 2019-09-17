@@ -74,28 +74,7 @@
                                     <i>United States</i>
                                 </div>
                             </div>
-                            <div class="col-md-4 col-sm-6 hidden-sm hidden-xs">
-                                <div class="block-text rel zmin">
-                                    <h6>tempore cum</h6>
-                                    <div class="mark">My rating:
-                                        <span class="rating-input">
-											<span data-value="0" class="fa fa-star"></span>
-											<span data-value="1" class="fa fa-star"></span>
-											<span data-value="2" class="fa fa-star"></span>
-											<span data-value="3" class="fa fa-star"></span>
-											<span data-value="4" class="fa fa-star"></span>
-											<span data-value="5" class="fa fa-star"></span>
-										</span>
-                                    </div>
-                                    <p>Hendrerit neque non, placerat quam.Mauris eu tortor congue purus congue iaculis sit amet tincidunt neque. ...</p>
 
-                                </div>
-                                <div class="person-text rel">
-                                    <img src="frontend/image-assets/m.png" alt="">
-                                    <h5>Rannynm</h5>
-                                    <i>Indonesia</i>
-                                </div>
-                            </div>
                             <div class="clearfix"></div>
                         </div>
                         <div class="item">

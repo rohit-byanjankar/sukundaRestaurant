@@ -12,9 +12,7 @@ use App\Http\Controllers\OrderController;
 |
 */
 
-Route::get('/', function () {
-    return view('front.index');
-});
+Route::get('/','HomeController@index');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
