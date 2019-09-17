@@ -20,9 +20,10 @@
 <body>
 <div class="wrapper">
         @include('front.layouts.navbar')
+
     <div class="main-panel" id="home">
         @yield('contents')
-        
+
     </div>
     @include('front.layouts.footer')
 </div>
@@ -50,7 +51,6 @@
     });
 </script>
 <!-- /End-date-piker -->
-<script src="js/SmoothScroll.min.js"></script>
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
@@ -85,7 +85,7 @@
 <!-- Bootstrap core JavaScript
     ================================================== -->
 <!-- Placed at the end of the document so the pages load faster -->
-<a href="#" id="toTop" style="display: none;"><span id="toTopHover"></span>To Top</a>
+<a href="#" id="toTop" style="display: none;" title="To Top"><span id="toTopHover"></span></a>
 @stack('scripts')
 </body>
 </html>

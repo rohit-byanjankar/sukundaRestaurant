@@ -40,7 +40,7 @@
                 <div class="banner-info">
                     <h1>
                         <a href="/">
-                            <img src="frontend/image-assets/logo.png" class="img-responsive" alt="">Bhaktapur</a>
+                            <img src="frontend/image-assets/logo.jpg" class="img-responsive" alt="">{{setting('site.title')}}</a>
                     </h1>
                     <h2>Tasty experience in every bite!</h2>
 
