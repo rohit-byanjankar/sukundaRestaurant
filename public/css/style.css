@@ -62,6 +62,10 @@ p,ul li,ol li{
 }
 /*-- //Reset-Code --*/
 
+.marginTouch{
+    padding: 80px;
+    border: 7px solid chocolate;
+}
 
 
 /*-- main --*/
@@ -874,9 +878,9 @@ background: #428bca;
 /*-- main menu--*/ 
 
 .agileinfo-tab-content1 {
-    max-height: 155px;
+    max-height: 160px;
     overflow: hidden;
-    min-height: 155px;
+    min-height: 160px;
     padding: 2em;
     background: rgba(255, 255, 255, 0.78);
     border: 1px dotted rgba(165, 28, 33, 0.57);
@@ -1037,7 +1041,7 @@ h3.title-contact {
     color: #FAA026;
     margin-bottom: 20px;
 }
-.contact-right input[type="text"], .contact-right input[type="email"] {
+.contact-right input[type="text"], .contact-right input[type="email"], .contact-right input[type="date"] {
     font-size: 1em;
     border: 1px solid #fff;
     background: #9cd5c4;
@@ -1052,12 +1056,12 @@ h3.title-contact {
     box-shadow: 1px 4px 0px 0px rgb(226, 225, 225);
     float: left;
 }
-.contact-right input[type="text"]:nth-child(1), .contact-right input[type="email"] {
+.contact-right input[type="text"]:nth-child(1), .contact-right input[type="email"], .contact-right input[type="date"] {
     margin: 1%;
 }
 .contact-right textarea{
 	width:98%;
-	padding:10px 15px;
+	padding:5px 15px;
 	outline:none;
 	resize:none;
     height:100px;
@@ -1086,7 +1090,7 @@ h3.title-contact {
     border: 1px solid#9cd5c4;
 }
 .contact-right {
-    padding: 4em 5em 4.8em;
+    padding: 3em 5em 4.8em;
     background: #fff;
     -webkit-box-shadow:  0px 0px 2px 22px rgb(156, 213, 196);
     -moz-box-shadow:  0px 0px 2px 22px rgb(156, 213, 196);
@@ -1234,7 +1238,7 @@ p.sub-p {
     margin-left: 1em;
 }
 .social_list li a {
-    color: #fff;
+    color: #FAA026;
     text-align: center;
     display: inline-block;
     font-size: 23px;
@@ -1249,7 +1253,7 @@ p.sub-p {
     transition: .5s all;
 }
 a.facebook{
-	background:#3b5998;
+	background:#9cd5c4;
 }
 a.facebook:hover{
 	background:#fff;
@@ -1953,7 +1957,7 @@ ul.w3_address li p {
         min-height: 350px;
     }
     .contact-right {
-        padding: 4em 2em 4.8em;
+        padding: 2em 2em 4.8em;
     }
     #showLess, #loadMore {
         width: 24%;

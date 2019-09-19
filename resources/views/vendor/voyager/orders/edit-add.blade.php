@@ -134,10 +134,10 @@
                                                 <input type='number' class='form-control quantity' name='quantity[]' value="{{$ol->quantity}}" min=1 required />
                                             </td>
                                             <td>
-                                                <input type='number' class='form-control rate' name='rate[]' value="{{$ol->rate}}" min=1>
+                                                <input type='number' class='form-control rate' name='rate[]' value="{{$ol->rate}}" min=1 required>
                                             </td>
                                             <td>
-                                                <input type='number' class='form-control amount' name='amount[]' value="{{$ol->amount}}" min=1>
+                                                <input type='number' class='form-control amount' name='amount[]' value="{{$ol->amount}}" min=1 required>
                                             </td>
                                             <td>
                                                 <select name="particular_status[]">

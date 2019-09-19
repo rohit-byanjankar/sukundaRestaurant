@@ -165,4 +165,31 @@ class OrderController extends Controller
         $pdf = PDF::loadView('voyager::orders.viewOrderReport',compact('orders','orderFrom','orderTo'));
         return $pdf->stream();
     }
+
+    public function addToOrder(Request $request)
+    {
+        $foodID = $request->foodId;
+        $foodItem = FoodMenuItem::find($foodID);
+        //dd($foodItem);
+        $orderCart = session()->get('orderCart');
+
+        // if cart is empty then this the first product
+        //dd($foodID);
+        if (!$orderCart) {
+            $orderCart = new Order();
+            session()->put('orderCart', $orderCart);
+        }
+
+        $orderCart->orderLineItem($foodItem,1);
+            session()->put('orderCart',$orderCart);
+
+            return redirect('/');
+    }
+
+    public function deleteFromOrders($id){
+        $orderCart=session()->get('orderCart');
+        unset($orderCart[$id]);
+
+        return redirect()->back();
+    }
 }

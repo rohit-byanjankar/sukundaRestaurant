@@ -26,13 +26,17 @@
                         <div class="menu-text-right1">
                             <div class="menu-title">
                                 <h4>{{$item->item_name}}</h4>
-
                             </div>
                             <div class="menu-price">
                                 <h4 class="price-clr">{{setting('site.currency').' '.$item->price}}</h4>
                             </div>
                             <div class="clearfix"></div>
                             <p> {{$item->description}}</p>
+                            <form action="{{route('addToOrder')}}" method="post">
+                                @csrf
+                                <button class="btn btn-warning center-block">Add to Order</button>
+                                <input type="hidden" value="{{$item->food_menu_item_id}}" name="foodId">
+                            </form>
                         </div>
                     </div>
                         <?php $active='' ?>

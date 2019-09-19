@@ -1,4 +1,3 @@
-
 <div class="agile-banner-main" id="home">
     <div class="banner-layer">
         <div class="header-main">
@@ -24,6 +23,10 @@
                             <li>
                                 <span class="fa fa-phone list-icon" aria-hidden="true"></span>
                                 <p> {{setting('site.phone_number')}} </p>
+                            </li>
+                            <li>
+                                <span class="fa fa-phone list-icon" aria-hidden="true"></span>
+                                <a href="{{route('viewOrders')}}">View Your Orders</a>
                             </li>
                         </ul>
                     </div>

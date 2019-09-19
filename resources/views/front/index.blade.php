@@ -1,6 +1,5 @@
 @extends('front.layouts.layout')
 @section('contents')
-
         @include('front.content.aboutUs')
         @include('front.content.ourMenu')
 
@@ -18,6 +17,7 @@
                 </div>
             </div>
         </div>
+
 
         <!-- slid -->
         <div class="slid">

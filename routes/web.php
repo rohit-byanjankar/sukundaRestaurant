@@ -12,7 +12,13 @@ use App\Http\Controllers\OrderController;
 |
 */
 
-Route::get('/','HomeController@index');
+Route::get('/','HomeController@index')->name('home');
+Route::post('book','BookingController@booking')->name('book');
+Route::post('addToCart','OrderController@addToOrder')->name('addToOrder');
+Route::post('deleteFromOrders/{id}','OrderController@deleteFromOrders')->name('deleteFromOrders');
+Route::get('viewOrders',function (){
+    return view('front.content.viewOrders');
+})->name('viewOrders');
 
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
