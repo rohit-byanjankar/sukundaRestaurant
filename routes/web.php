@@ -20,6 +20,10 @@ Route::get('viewOrders',function (){
     return view('front.content.viewOrders');
 })->name('viewOrders');
 
+Route::get('/pos', function () {
+    return view('front.pos');
+});
+
 Route::group(['prefix' => 'admin'], function () {
     Voyager::routes();
 
