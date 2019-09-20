@@ -76,12 +76,11 @@
                             <div class="col-md-6 menu-grids">
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
-                                        <img src="{{$feature->image}}" alt="" class="img-responsive">
+                                        <img src="storage/{{($feature->image)}}" alt="" class="img-responsive">
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
                                             <h4>{{$feature->item_name}} </h4>
-
                                         </div>
                                         <div class="menu-price">
                                             <h4 class="price-clr">{{setting('site.currency').' '.$feature->price}}</h4>

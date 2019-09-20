@@ -5,7 +5,7 @@
         <tr>
             <th style="width:50%">Product</th>
             <th style="width:10%">Price</th>
-{{--            <th style="width:10%">Quantity</th>--}}
+            <th style="width:10%">Quantity</th>
             <th style="width:22%" class="text-center">Subtotal</th>
             <th style="width:10%"></th>
         </tr>
@@ -28,9 +28,9 @@
                         </div>
                     </td>
                     <td data-th="Price">${{ $details['price'] }}</td>
-{{--                    <td data-th="Quantity">--}}
-{{--                        <input type="number" value="{{ $details['quantity'] }}" class="form-control quantity" />--}}
-{{--                    </td>--}}
+                    <td data-th="Quantity">
+                        <input type="number" value="{{ $details['quantity'] }}" class="form-control quantity" />
+                    </td>
                     <td class="text-center"> {{ $details['price'] * $details['quantity'] }}</td>
                     <td>
                         <form method="post" action="{{route('deleteFromOrders',$id)}}">
