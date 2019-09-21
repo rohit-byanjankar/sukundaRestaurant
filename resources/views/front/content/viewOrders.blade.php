@@ -1,4 +1,4 @@
-@extends('front.layouts.layout')
+@extends('front.index')
 @section('contents')
     <table id="orderCart" class="table table-hover table-condensed">
         <thead>

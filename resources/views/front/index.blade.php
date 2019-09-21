@@ -10,7 +10,6 @@
                     <span class="sub-title p1"></span>
                     <span class="fa fa-cutlery" aria-hidden="true"></span>
                     <span class="sub-title p1"></span>
-
                 </div>
                 <div class="time">
                    {!! setting('site.opening_time') !!}

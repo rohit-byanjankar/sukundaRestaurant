@@ -20,7 +20,6 @@
 <body>
 <div class="wrapper">
         @include('front.layouts.navbar')
-
     <div class="main-panel" id="home">
         @yield('contents')
 

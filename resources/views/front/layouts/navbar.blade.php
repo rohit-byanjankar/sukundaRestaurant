@@ -24,15 +24,19 @@
                                 <span class="fa fa-phone list-icon" aria-hidden="true"></span>
                                 <p> {{setting('site.phone_number')}} </p>
                             </li>
-                            <li>
-                                <span class="fa fa-phone list-icon" aria-hidden="true"></span>
-                                <a href="{{route('viewOrders')}}">View Your Orders</a>
-                            </li>
                         </ul>
                     </div>
 
                     <div class="clearfix"> </div>
                 </nav>
+                @if(session()->has('success'))
+                    <div class="alert alert-info text-center alert-dismissible col-md-12">
+                        {{ session()->get('success')}}
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                @endif
                 <div class="clearfix"> </div>
             </div>
         </div>

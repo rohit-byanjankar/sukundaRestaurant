@@ -34,7 +34,7 @@
                             <p> {{$item->description}}</p>
                             <form action="{{route('addToOrder')}}" method="post">
                                 @csrf
-                                <button class="btn btn-warning center-block">Add to Order</button>
+                                <button class="btn btn-warning center-block hide">Add to Order</button>
                                 <input type="hidden" value="{{$item->food_menu_item_id}}" name="foodId">
                             </form>
                         </div>

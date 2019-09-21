@@ -108,10 +108,17 @@ p,ul li,ol li{
 }
 
 /*-- //main --*/ 
-/*-- header --*/ 
-.header-main {
+/*-- header --*/
+.nav-color{
     background:#FAA026;
     position: absolute;
+    width: 100%;
+    top: 0;
+    height: 60px;
+}
+.header-main {
+    background:#FAA026;
+    position: static;
     width: 100%;
    top: 0;
    height: 60px;
