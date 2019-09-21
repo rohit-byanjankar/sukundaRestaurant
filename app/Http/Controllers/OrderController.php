@@ -177,10 +177,11 @@ class OrderController extends Controller
         //dd($foodID);
         if (!$orderCart) {
             $orderCart = new Order();
-            session()->put('orderCart', $orderCart);
+            $orderCart->orderLineItem($foodID,1);
+            session()->put('orderCart',$orderCart);
         }
 
-        $orderCart->orderLineItem($foodItem,1);
+        $orderCart->orderLineItem($foodID,1);
             session()->put('orderCart',$orderCart);
 
             return redirect('/');

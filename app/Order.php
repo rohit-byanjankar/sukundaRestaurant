@@ -16,13 +16,16 @@ protected $primaryKey = 'order_id';
         return $this->belongsTo('App\OrderLine','order_id');
     }
 
-    public  function  orderLineItem($foodItem,$quantity){
-        if(!isset($this->lineItems[$foodItem->food_menu_item_id])){
-            $this->lineItems[$foodItem->food_menu_item_id]=$foodItem->item_name;
-            $this->lineItems[$foodItem->food_menu_item_id]=$quantity;
-        }
-        else{
-            $this->lineItems[$foodItem->food_menu_item_id]->qty=$quantity;
+    public  function  orderLineItem($foodID,$quantity){
+        if(key_exists($foodID,$this->lineItems)){
+            if(!isset($this->lineItems[$foodID])){
+                $this->lineItems[$foodID]=$foodID;
+                $this->lineItems[$foodID]->qty=$quantity;
+            }
+            else{
+                $this->lineItems[$foodID]->qty=$quantity;
+            }
         }
     }
 }
+
