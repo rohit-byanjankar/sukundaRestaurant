@@ -183,13 +183,12 @@ class OrderController extends Controller
         $orderCart->orderLineItem($foodItem,1);
             session()->put('orderCart',$orderCart);
 
-            return redirect('/');
+            return redirect('/')->with('success','Item added to Cart');
     }
 
     public function deleteFromOrders($id){
         $orderCart=session()->get('orderCart');
         unset($orderCart[$id]);
-
         return redirect()->back();
     }
 }
