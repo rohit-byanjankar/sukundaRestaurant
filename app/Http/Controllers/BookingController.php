@@ -23,6 +23,6 @@ class BookingController extends Controller
             $admin->notify(new BookingByPeople($booker));
         }
 
-        return redirect(route('home'))->with('success','Your reservation notification has been sent');
+        return redirect(route('home'))->with('success','Your reservation request has been made. We will contact you in few hours.');
     }
 }

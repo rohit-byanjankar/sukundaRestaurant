@@ -50,5 +50,4 @@
         @endif
     </li>
 @endforeach
-
 </ul>

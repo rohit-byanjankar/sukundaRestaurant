@@ -9,7 +9,6 @@
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all">
     <link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all">
     <!--about-bottom -->
-    <link type="text/css" rel="stylesheet" href="css/cm-overlay.css">
     <!--about-bottom -->
     <link href="css/font1.css" rel="stylesheet">
     <link href="css/font2.css" rel="stylesheet">
@@ -22,7 +21,6 @@
         @include('front.layouts.navbar')
     <div class="main-panel" id="home">
         @yield('contents')
-
     </div>
     @include('front.layouts.footer')
 </div>
@@ -32,24 +30,12 @@
 <!--/js-->
 <!-- //gallery -->
 <script src="js/jquery.tools.min.js"></script>
-<script src="js/jquery.mobile.custom.min.js"></script>
-<script src="js/jquery.cm-overlay.js"></script>
+{{--<script src="js/jquery.mobile.custom.min.js"></script>--}}
 <script src="js/bootstrap.js"></script>
-<script>
-    $(document).ready(function () {
-        $('.cm-overlay').cmOverlay();
-    });
-</script>
+
 <!-- //gallery -->
-<!--start-date-piker-->
 <link rel="stylesheet" href="css/jquery-ui.css">
 <script src="js/jquery-ui.js"></script>
-<script>
-    $(function () {
-        $("#datepicker,#datepicker1").datepicker();
-    });
-</script>
-<!-- /End-date-piker -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">

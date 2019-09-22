@@ -11,11 +11,6 @@ class Order extends Model
 
     public $cartItems;
     
-    public function __construct(){
-        $this->lineItems=[];
-    }
-    
-    
     public function orderLine(){
         return $this->belongsTo('App\OrderLine','order_id');
     }
@@ -25,6 +20,7 @@ class Order extends Model
         //else we just add the quantity
         if(!isset($this->cartItems[$foodItem->food_menu_item_id])){
             $this->cartItems[$foodItem->food_menu_item_id]=array(
+                                                            'image' => $foodItem->image,
                                                             'quantity'=>$quantity,
                                                             'price'=>$foodItem->price,
                                                             'name'=>$foodItem->item_name,
@@ -34,6 +30,10 @@ class Order extends Model
         else{
             $this->cartItems[$foodItem->food_menu_item_id]['quantity']+=$quantity;
         }
+    }
+
+    public function getCartItems(){
+        return $this->cartItems;
     }
 }
 

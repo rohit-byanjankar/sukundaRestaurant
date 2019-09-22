@@ -177,12 +177,12 @@ class OrderController extends Controller
         //dd($foodID);
         if (!$orderCart) {
             $orderCart = new Order();
-            $orderCart->orderLineItem($foodID,1);
+            $orderCart->orderLineItem($foodItem,1);
             session()->put('orderCart',$orderCart);
         }
 
-        $orderCart->orderLineItem($foodID,1);
-            session()->put('orderCart',$orderCart);
+        $orderCart->orderLineItem($foodItem,1);
+            session()->push('cartItems',$orderCart);
 
             return redirect('/')->with('success','Item added to Cart');
     }

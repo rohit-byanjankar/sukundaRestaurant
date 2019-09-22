@@ -4,6 +4,7 @@
             <div class="container">
                 <nav class="navbar navbar-default">
                     <div class="navbar-header">
+                    <img src="frontend/image-assets/logo.png" width="60px" alt="" id="margin">
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                             <span class="sr-only">Toggle navigation</span>
                             <span class="icon-bar"></span>
@@ -11,7 +12,6 @@
                             <span class="icon-bar"></span>
                         </button>
                     </div>
-
                     <!-- navbar-header -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         {{menu('Site Main Menu')}}
@@ -23,6 +23,8 @@
                             <li>
                                 <span class="fa fa-phone list-icon" aria-hidden="true"></span>
                                 <p> {{setting('site.phone_number')}} </p>
+                            </li>                           <li>
+                                <a href="{{route('viewOrders')}}"><span class="fa fa-shopping-cart list-icon" aria-hidden="true"></span></a>
                             </li>
                         </ul>
                     </div>
@@ -46,8 +48,9 @@
             <div class="banner-top">
                 <div class="banner-info">
                     <h1>
-                        <a href="/">
-                            <img src="frontend/image-assets/logo.jpg" class="img-responsive" alt="">{{setting('site.title')}}</a>
+                    <a>
+                        {{setting('site.title')}}
+                    </a>
                     </h1>
                     <h2>Tasty experience in every bite!</h2>
 

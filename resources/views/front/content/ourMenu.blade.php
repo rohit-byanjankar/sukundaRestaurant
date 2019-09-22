@@ -34,7 +34,7 @@
                             <p> {{$item->description}}</p>
                             <form action="{{route('addToOrder')}}" method="post">
                                 @csrf
-                                <button class="btn btn-warning center-block hide">Add to Order</button>
+                                <button class="btn btn-warning center-block">Add to Order</button>
                                 <input type="hidden" value="{{$item->food_menu_item_id}}" name="foodId">
                             </form>
                         </div>
@@ -120,13 +120,16 @@
             $('#loadMore').click(function () {
                 x = (x + 1 <= size_li) ? x + 1 : size_li;
                 $('#myList li:lt(' + x + ')').show();
+                $(".load_more").addClass('increaseHeight');
             });
             $('#showLess').click(function () {
                 x = (x - 1 < 0) ? 1 : x - 1;
                 $('#myList li').not(':lt(' + x + ')').hide();
+                $(".load_more").removeClass('increaseHeight');
             });
         });
     </script>
+
 @endpush
 
 
