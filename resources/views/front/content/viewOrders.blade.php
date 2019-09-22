@@ -13,8 +13,9 @@ if(session('orderCart')){
                 
               </li>
               <li style="width:100%;padding:0 10px">
+                @if(count($items)>0)
                 <a href="#" data-toggle="modal" data-target="#orderConfirmationModal" class="text-center btn btn-warning pull-right">Place Order</a></li>
-
+                @endif
           </ul>
  <div class="modal" tabindex="-1" role="dialog" id="orderConfirmationModal">
   <div class="modal-dialog" role="document">
