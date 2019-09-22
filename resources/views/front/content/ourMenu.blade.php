@@ -32,7 +32,7 @@
                             </div>
                             <div class="clearfix"></div>
                             <p> {{$item->description}}</p>
-                            <form action="{{route('addToOrder')}}" method="post">
+                            <form class="add-to-cart" action="{{route('addToOrder')}}" method="post">
                                 @csrf
                                 <button class="btn btn-warning center-block">Add to Order</button>
                                 <input type="hidden" value="{{$item->food_menu_item_id}}" name="foodId">

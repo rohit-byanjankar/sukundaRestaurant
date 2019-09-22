@@ -16,6 +16,8 @@ Route::get('/','HomeController@index')->name('home');
 Route::post('book','BookingController@booking')->name('book');
 Route::post('addToOrder','OrderController@addToOrder')->name('addToOrder');
 Route::post('deleteFromOrders/{id}','OrderController@deleteFromOrders')->name('deleteFromOrders');
+Route::get('deleteFromOrders/{id}','OrderController@deleteFromOrders')->name('deleteFromOrders');
+Route::post('confirmOrder','OrderController@confirmOrder')->name('confirmOrder');
 Route::get('viewOrders',function (){
     return view('front.content.viewOrders');
 })->name('viewOrders');

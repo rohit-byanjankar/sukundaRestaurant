@@ -2451,3 +2451,26 @@ ul.w3_address li p {
     }
 }
 /* -- //Responsive code -- */
+
+.add-to-cart{
+    position:absolute;
+    right:15px;
+    bottom: 0;
+}
+
+#orderConfirmationModal{
+    z-index: 1;
+}
+
+.modal-backdrop.in{
+    z-index: 1;
+}
+
+.modal-title{
+    font-size:1.5em;
+    color:#ffff50;
+}
+
+.form-control{
+    margin:10px 0 20px 0;
+}

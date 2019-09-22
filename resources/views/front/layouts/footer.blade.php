@@ -70,7 +70,7 @@
         </ul>
     </div>
     <div class="footer-copy">
-        <p>© 2019 Elit. All rights reserved | Design by Elit
+        <p>Copyright © 2019 Sukunda Cuisine All rights reserved
         </p>
     </div>
 </div>

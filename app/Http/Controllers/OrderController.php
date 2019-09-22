@@ -184,12 +184,18 @@ class OrderController extends Controller
         $orderCart->orderLineItem($foodItem,1);
             session()->push('cartItems',$orderCart);
 
-            return redirect('/')->with('success','Item added to Cart');
+            return redirect('/')->with('success','Item Added to Order');
     }
 
     public function deleteFromOrders($id){
         $orderCart=session()->get('orderCart');
-        unset($orderCart[$id]);
-        return redirect()->back();
+        $orderCart->removeLineItem($id);
+        return redirect()->back()->with('success','Item Has Been Removed From Order');
+    }
+
+    public function confirmOrder(){
+        $orderCart=session()->get('orderCart');
+        $orderCart->cartItems=[];
+        return redirect()->back()->with('success','Your Order has Been Requested, We will contact you soon for comfirmation');
     }
 }

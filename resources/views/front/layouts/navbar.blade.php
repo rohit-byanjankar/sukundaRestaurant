@@ -23,14 +23,17 @@
                             <li>
                                 <span class="fa fa-phone list-icon" aria-hidden="true"></span>
                                 <p> {{setting('site.phone_number')}} </p>
-                            </li>                           <li>
-                                <a href="{{route('viewOrders')}}"><span class="fa fa-shopping-cart list-icon" aria-hidden="true"></span></a>
+                            </li>  
+                           <li class="dropdown">
+                            
+                                @include('front.content.viewOrders')
                             </li>
                         </ul>
                     </div>
 
                     <div class="clearfix"> </div>
                 </nav>
+
                 @if(session()->has('success'))
                     <div class="alert alert-info text-center alert-dismissible col-md-12">
                         {{ session()->get('success')}}
@@ -39,6 +42,7 @@
                         </button>
                     </div>
                 @endif
+
                 <div class="clearfix"> </div>
             </div>
         </div>

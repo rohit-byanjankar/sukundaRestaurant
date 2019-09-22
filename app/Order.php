@@ -31,6 +31,11 @@ class Order extends Model
             $this->cartItems[$foodItem->food_menu_item_id]['quantity']+=$quantity;
         }
     }
+    public function removeLineItem($id){
+        if(isset($this->cartItems[$id])){
+            unset($this->cartItems[$id]);
+        }
+    }
 
     public function getCartItems(){
         return $this->cartItems;
