@@ -10,7 +10,6 @@ if(session('orderCart')){
           <ul class="dropdown-menu dropdown-cart" style="left:-100%" role="menu">
               <li>
                  @include('front.content.order_list_table')
-                
               </li>
               <li style="width:100%;padding:0 10px">
                 @if(count($items)>0)
@@ -31,7 +30,7 @@ if(session('orderCart')){
         <div class="form-group">
             <input type="hidden" value="{{json_encode($items)}}" name="items">
             <input type="email" class="form-control" placeholder="Email" name="email" required="" />
-            <input type="tel" class="form-control" placeholder="Mobile Number" name="phone" required="" />
+            <input type="number" class="form-control" placeholder="Mobile Number" name="phone_number" required/>
         </div>
       </div>
       <div class="modal-footer">
@@ -42,5 +41,6 @@ if(session('orderCart')){
     </div>
   </div>
 </div>
+
 
 

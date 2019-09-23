@@ -25,7 +25,6 @@
                                 <p> {{setting('site.phone_number')}} </p>
                             </li>  
                            <li class="dropdown">
-                            
                                 @include('front.content.viewOrders')
                             </li>
                         </ul>
@@ -40,6 +39,19 @@
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
+                    </div>
+                @endif
+
+                @if ($errors->any())
+                    <div class="alert alert-danger alert-dismissible col-md-12">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                {{ $error }}
+                                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                                    <span aria-hidden="true">&times;</span>
+                                </button>
+                            @endforeach
+                        </ul>
                     </div>
                 @endif
 

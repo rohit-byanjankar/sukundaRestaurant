@@ -135,7 +135,6 @@
 
 @section('javascript')
 <script>
-
     function updateAmounts(){
         updateWageAmount();
         updateTaxableAmount()

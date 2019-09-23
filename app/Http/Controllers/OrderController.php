@@ -3,11 +3,13 @@
 namespace App\Http\Controllers;
 
 use App\FoodMenuItem;
+use App\Notifications\OrderConfirm;
 use App\OrderStatus;
 use Illuminate\Http\Request;
 use Barryvdh\DomPDF\Facade as PDF;
 use App\OrderLine;
 use App\Order;
+use App\User;
 use DB;
 
 class OrderController extends Controller
@@ -183,7 +185,6 @@ class OrderController extends Controller
 
         $orderCart->orderLineItem($foodItem,1);
             session()->push('cartItems',$orderCart);
-
             return redirect('/')->with('success','Item Added to Order');
     }
 
@@ -193,9 +194,24 @@ class OrderController extends Controller
         return redirect()->back()->with('success','Item Has Been Removed From Order');
     }
 
-    public function confirmOrder(){
+    public function updateOrderCart(Request $request){
         $orderCart=session()->get('orderCart');
-        $orderCart->cartItems=[];
+        $orderCart->updateOrder($request->product_id,$request->quantity);
+    }
+
+    public function confirmOrder(Request $request){
+        $request->validate([
+            'email' => 'required',
+            'phone_number' => 'required|max:10|min:7'
+        ]);
+        $email=$request->email;
+        $phone=$request->phone_number;
+
+        $admins=User::where('role_id',1)->get();
+        foreach ($admins as $admin){
+            $admin->notify(new OrderConfirm($email,$phone));
+        }
+
         return redirect()->back()->with('success','Your Order has Been Requested, We will contact you soon for comfirmation');
     }
 }

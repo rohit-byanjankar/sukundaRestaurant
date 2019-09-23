@@ -40,5 +40,11 @@ class Order extends Model
     public function getCartItems(){
         return $this->cartItems;
     }
+
+    public function updateOrder($id,$quantity){
+        if(isset($this->cartItems[$id])){
+            $this->cartItems[$id]['quantity']=$quantity;
+        }
+    }
 }
 

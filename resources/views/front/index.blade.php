@@ -2,7 +2,6 @@
 @section('contents')
         @include('front.content.aboutUs')
         @include('front.content.ourMenu')
-
         <div class="section">
             <div class="w3_agileits-subscribe timings text-center">
                 <h4>opening times</h4>
@@ -16,7 +15,6 @@
                 </div>
             </div>
         </div>
-
 
         <!-- slid -->
         <div class="slid">
