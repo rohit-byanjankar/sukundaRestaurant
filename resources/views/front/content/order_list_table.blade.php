@@ -12,19 +12,28 @@
                     <tbody>
                     <?php $total = 0 ?>
                     @if(count($items)>0)
+                    <form method="post" action="{{route('updateOrder')}}">
+                        @csrf
                         @foreach($items as $key=>$item)
-                            <?php 
+                            <?php
                             $subTotal=$item['price']*$item['quantity'];
                             $total+=$subTotal;
                             ?>
                             <tr>
                                 <td><!--img src="storage/{{$item['image']}}" height="50px" width="100px"--> {{$item['name']}}</td>
                                 <td id="price">{{number_format($item['price'],2)}}</td>
-                                <td><input type="number" value="{{$item['quantity']}}" min="1" id="size" class="qty" onchange="updateOrder({{$item['id']}})"></td>
+                                <td><input type="number" value="{{$item['quantity']}}" name="quantity" min="1" id="size" class="qty" ></td>
                                 <td class='text-right'>{{number_format($subTotal,2)}}</td>
                                 <td><a href="{{url('deleteFromOrders/'.$key)}}" title='Remove Item'><span class="fa fa-trash text-danger"></span></a></td>
+                                <input type="hidden" value="{{$key}}" name="product_id">
                             </tr>
                         @endforeach
+                            <tr>
+                                <td colspan="4">
+                                        <button class="btn-sm btn-warning pull-right">update order </button>
+                                </td>
+                            </tr>
+                        </form>
                     @else
                         <tr>
                             <td colspan="4"><h3 class="text-center">Empty Order</h3></td>
@@ -40,24 +49,3 @@
                     </tr>
                     </tfoot>
                 </table>
-
-@push('scripts')
-    <script>
-        function updateOrder(id) {
-            var product_id = id;
-            var new_quantity = $('.qty').val();
-            $.ajax({
-                url : "{{url('/updateOrder')}}",
-                method : 'post',
-                data : {
-                  quantity : new_quantity,
-                  product_id : product_id,
-                  _token: '{{csrf_token()}}'
-                },
-                success : function(response) {
-                    //$(inputQuantityElement).val(new_quantity);
-                }
-            });
-        }
-    </script>
-@endpush

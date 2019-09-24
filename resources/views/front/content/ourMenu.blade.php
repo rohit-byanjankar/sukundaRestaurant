@@ -31,7 +31,7 @@
                                 <h4 class="price-clr">{{setting('site.currency').' '.$item->price}}</h4>
                             </div>
                             <div class="clearfix"></div>
-                            <p> {{$item->description}}</p>
+                            <p id="pfont"> {{$item->description}}</p>
                             <form class="add-to-cart" action="{{route('addToOrder')}}" method="post">
                                 @csrf
                                 <button class="btn btn-warning center-block">Add to Order</button>
@@ -53,26 +53,14 @@
 
 <div class="menu-agileits_w3layouts section">
     <div class="container">
-
         <div class="load_more">
             <h3 class="w3layouts-title">
                 <img src="frontend/image-assets/menu1.png" class="img-responsive" alt="">special dishes</h3>
-            <ul id="myList">
-                <?php
-                    $count=count($featured);
-                    $pages=ceil($count/6);
-                    $display='list-item';
-
-                    for ($i=0;$i<$pages;$i++)
-                        {
-                ?>
-                <li style="display:{{$display}}">
+            @if(count($featured) > 0)
+            <ul {{--id="myList"--}}>
+                @foreach($featured as $feature)
                     <div class="l_g">
                         <div class="l_g_r">
-                            @for($j=$i*6; $j<count($featured); $j++)
-                                @php
-                                $feature=$featured[$j];
-                                @endphp
                             <div class="col-md-6 menu-grids">
                                 <div class="w3l-menu-text">
                                     <div class="menu-text-left">
@@ -80,38 +68,34 @@
                                     </div>
                                     <div class="menu-text-right">
                                         <div class="menu-title">
-                                            <h4>{{$feature->item_name}} </h4>
+                                            <h3>{{$feature->item_name}} </h3>
                                         </div>
                                         <div class="menu-price">
                                             <h4 class="price-clr">{{setting('site.currency').' '.$feature->price}}</h4>
                                         </div>
                                         <div class="clearfix"></div>
-                                        <p> {{$feature->description}}</p>
+                                        <p id="pfont"> {{$feature->description}}</p>
                                     </div>
                                     <div class="clearfix"> </div>
                                 </div>
                             </div>
-                                <?php
-                                    if($j>=5+(6*$i))break;
-                                ?>
-                            @endfor
                         </div>
                     </div>
-                </li>
-                    <?php
-                        $display='none';
-                        } ?>
+                @endforeach
             </ul>
-            <div class="nav-menu text-center">
-                <div id="loadMore">Load more</div>
-                <div id="showLess">Show less</div>
-            </div>
+               {{-- <div class="nav-menu text-center">
+                    <div id="loadMore">Load more</div>
+                    <div id="showLess">Show less</div>
+                </div>--}}
+            @else
+                 <h1 class="text-center">No Special Dishes</h1>
+            @endif
         </div>
     </div>
 </div>
 <!--//menu-->
 
-@push('scripts')
+{{--@push('scripts')
     <script>
         $(document).ready(function () {
             size_li = $("#myList li").size();
@@ -129,7 +113,6 @@
             });
         });
     </script>
-
-@endpush
+@endpush--}}
 
 

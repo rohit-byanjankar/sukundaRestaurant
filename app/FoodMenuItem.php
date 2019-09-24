@@ -11,6 +11,6 @@ class FoodMenuItem extends Model
     protected $primaryKey = 'food_menu_item_id';
 
     public function scopeFeatured($query){
-        return $query->where('is_featured',1);
+        return $query->where('is_special_dish',1);
     }
 }

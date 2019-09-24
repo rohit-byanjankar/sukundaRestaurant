@@ -42,6 +42,11 @@ h1, h2, h3, h4, h5, h6 {
     margin-top: 5px;
 }
 
+#pfont{
+    font-family: 'Rancho', cursive;
+    font-size: 17px;
+}
+
 ul {
 	margin: 0;
 	padding: 0;
@@ -465,16 +470,10 @@ h3.w3layouts-title img {
     border: 4px solid #FAA026;
 }
 .load_more {
+    height: 800px;
     background: #fff;
     padding: 4em 2em;
     border: 2.5px dotted rgba(165, 28, 33, 0.66);
-}
-.increaseHeight {
-    background: #fff;
-    padding: 4em 2em;
-    border: 2.5px dotted rgba(165, 28, 33, 0.66);
-    min-height: 1400px;
-    max-height: 1400px;
 }
 
 .menu-tag {

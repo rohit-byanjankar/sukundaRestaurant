@@ -197,6 +197,7 @@ class OrderController extends Controller
     public function updateOrderCart(Request $request){
         $orderCart=session()->get('orderCart');
         $orderCart->updateOrder($request->product_id,$request->quantity);
+        return redirect()->back()->with('success','Order updated successfully.');
     }
 
     public function confirmOrder(Request $request){
