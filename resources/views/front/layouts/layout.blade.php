@@ -19,6 +19,7 @@
 <body>
 <div class="wrapper">
         @include('front.layouts.navbar')
+        @include('front.content.splashAnnouncement')
     <div class="main-panel" id="home">
         @yield('contents')
     </div>

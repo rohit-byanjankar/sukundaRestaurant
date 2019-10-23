@@ -29,3 +29,4 @@
         <!-- //slid -->
 {{--          @include('front.content.testimonial')--}}
 @endsection
+
